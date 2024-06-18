@@ -1,22 +1,26 @@
 .resume-page {
   flex-wrap: wrap;
 }
+
 .left-side {
   max-width: 1080px;
 }
+
 /* Post */
 .about {
   width: 1080px;
   padding: 56px 32px 32px 32px;
-  box-sizing: border-box;
 }
+
 .comment {
   align-items: center;
 }
-.nameLink {
+
+.name-link {
   color: #5095ec;
   cursor: pointer;
 }
+
 .about-me {
   padding-left: 8px;
   border-left: 2px solid rgba(211, 216, 222, 1);
@@ -25,6 +29,7 @@
 .view-info {
   align-items: center;
 }
+
 .view-info span {
   font-size: 16px;
 }
@@ -33,23 +38,28 @@
 .secondary-info {
   padding: 16px 32px;
 }
+
 .secondary-title {
   justify-content: space-between;
   align-items: center;
   width: 100%;
   cursor: pointer;
 }
+
 .secondary-title span {
   font-size: 16px;
   line-height: 18.75px;
 }
+
 .secondary-description {
   display: none;
   flex-direction: column;
 }
+
 .drop-up {
   display: none;
 }
+
 /* RIGHT SIDE */
 .person-card {
   width: 264px;
@@ -57,23 +67,27 @@
   align-content: center;
   flex-wrap: wrap;
   padding-top: 32px;
-  box-sizing: border-box;
   align-items: center;
 }
+
 .avatar {
   width: 132px;
 }
+
 .user-info {
   width: fit-content;
   align-items: center;
 }
+
 .name {
   font-size: 18px;
   line-height: 21.09px;
 }
+
 .post {
   color: #8f8f8f;
 }
+
 .contact {
   cursor: pointer;
 }
@@ -83,32 +97,38 @@
   justify-content: space-between;
   border-bottom: 1px solid #d3d8de;
 }
+
 .nav-title-text {
   font-weight: 500;
   line-height: 20px;
 }
+
 .nav-els {
   padding-top: 8px;
   padding-bottom: 10px;
 }
+
 .nav-el {
   cursor: pointer;
   padding: 8px 16px;
   width: 100%;
-  box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
 }
+
 .frends {
   border-bottom: 1px solid #d3d8de;
   padding-bottom: 16px;
 }
+
 .events {
   padding-top: 16px;
 }
+
 .nav-text {
   align-items: center;
 }
+
 .nav-drop-down {
   display: none;
 }
@@ -120,12 +140,15 @@
   font-size: 12px;
   line-height: 16px;
 }
+
 .green {
   background-color: #47b091;
 }
+
 .red {
   background-color: #e33939;
 }
+
 .balance-value {
   color: #8f8f8f;
   font-size: 12px;

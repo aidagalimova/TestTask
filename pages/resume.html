@@ -6,7 +6,7 @@
       <img src="./assets/image/Abstract.png" alt="abstract" />
       <div class="comment flex-row gap8">
         <img src="./assets/icon/comment.svg" alt="comment" />
-        <span><span class="nameLink">Аида Галимова</span> добавила:</span>
+        <span><span class="name-link">Аида Галимова</span> добавила:</span>
       </div>
       <div class="about-me">
         Изучение веб-разработки начала в 2019 году. Прошла курсы по JS, HTML,
@@ -17,11 +17,11 @@
       </div>
       <div class="flex-row gap32">
         <div class="view-info flex-row gap8">
-          <img src="./assets/icon/eye.svg" />
+          <img src="./assets/icon/eye.svg" alt="eye" />
           <span>432</span>
         </div>
         <div class="view-info flex-row gap8">
-          <img src="./assets/icon/comment.svg" />
+          <img src="./assets/icon/comment.svg" alt="comment" />
           <span>47</span>
         </div>
       </div>
@@ -34,11 +34,16 @@
         onclick="toggle('education-drop-down', 'education-drop-up', 'education-description')"
       >
         <span>Образование</span>
-        <img src="./assets/icon/chevron-down.svg" id="education-drop-down" />
+        <img
+          src="./assets/icon/chevron-down.svg"
+          id="education-drop-down"
+          alt="dropDown"
+        />
         <img
           src="./assets/icon/chevron-up.svg"
           id="education-drop-up"
           class="drop-up"
+          alt="dropUp"
         />
       </div>
       <div id="education-description" class="secondary-description gap8">
@@ -57,11 +62,16 @@
         onclick="toggle('experience-drop-down', 'experience-drop-up', 'experience-description')"
       >
         <span>Опыт работы</span>
-        <img src="./assets/icon/chevron-down.svg" id="experience-drop-down" />
+        <img
+          src="./assets/icon/chevron-down.svg"
+          id="experience-drop-down"
+          alt="dropDown"
+        />
         <img
           src="./assets/icon/chevron-up.svg"
           id="experience-drop-up"
           class="drop-up"
+          alt="dropUp"
         />
       </div>
       <div id="experience-description" class="secondary-description gap8">
@@ -111,45 +121,57 @@
           src="./assets/icon/chevron-down.svg"
           class="nav-drop-down"
           id="nav-drop-down"
+          alt="dropDown"
         />
         <img
           src="./assets/icon/chevron-up.svg"
           class="nav-drop-up"
           id="nav-drop-up"
+          alt="dropUp"
         />
       </div>
       <div id="nav-els" class="nav-els">
         <div class="nav-el flex-row">
           <div class="nav-text flex-row gap16">
-            <img src="./assets/icon/person.svg" /><span>Мой профиль</span>
+            <img src="./assets/icon/person.svg" alt="profileIcon" /><span
+              >Мой профиль</span
+            >
           </div>
         </div>
         <div class="nav-el flex-row">
           <div class="nav-text flex-row gap16">
-            <img src="./assets/icon/finance.svg" /><span>Баланс</span>
+            <img src="./assets/icon/finance.svg" alt="financeIcon" /><span
+              >Баланс</span
+            >
           </div>
           <span class="balance-value">$ 1,430</span>
         </div>
         <div class="nav-el flex-row">
           <div class="nav-text flex-row gap16">
-            <img src="./assets/icon/scheme.svg" /><span>Связи</span>
+            <img src="./assets/icon/scheme.svg" alt="schemeIcon" /><span
+              >Связи</span
+            >
           </div>
           <div class="red notification">29</div>
         </div>
         <div class="nav-el flex-row frends">
           <div class="nav-text flex-row gap16">
-            <img src="./assets/icon/people.svg" /><span>Друзья</span>
+            <img src="./assets/icon/people.svg" alt="peopleIcon" /><span
+              >Друзья</span
+            >
           </div>
         </div>
         <div class="nav-el flex-row events">
           <div class="nav-text flex-row gap16">
-            <img src="./assets/icon/calendar.svg" /><span>События</span>
+            <img src="./assets/icon/calendar.svg" alt="calendarIcon" /><span
+              >События</span
+            >
           </div>
           <div class="green notification">45</div>
         </div>
         <div class="nav-el flex-row">
           <div class="nav-text flex-row gap16">
-            <img src="./assets/icon/settings.svg" /><span
+            <img src="./assets/icon/settings.svg" alt="settingsIcon" /><span
               >Настройки аккаунта</span
             >
           </div>

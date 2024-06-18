@@ -20,22 +20,28 @@ const styleNavTabs = (curRoute) => {
   for (const value of Object.values(routes)) {
     if (value.id !== curRoute.id) {
       const navEl = document.getElementById(`${value.id}`);
-      navEl.className = navEl.className.replaceAll(" active", "");
+      navEl.classList.remove("active");
     }
   }
-  document.getElementById(curRoute.id).className += " active";
+  document.getElementById(curRoute.id).classList.add("active");
 };
 
 const locationHandler = async () => {
-  var location = window.location.hash.replace("#", "");
-  if (location.length == 0) {
+  let location = window.location.hash.replace("#", "");
+  if (location.length === 0) {
     location = "#";
   }
   const route = routes[location];
   styleNavTabs(route);
-  const html = await fetch(route.template).then((response) => response.text());
-  document.getElementById("page").innerHTML = html;
-  document.title = route.title;
+  try {
+    const html = await fetch(route.template).then((response) =>
+      response.text()
+    );
+    document.getElementById("page").innerHTML = html;
+    document.title = route.title;
+  } catch (error) {
+    console.log("Error loading page", error);
+  }
 };
 
 window.addEventListener("hashchange", locationHandler);
