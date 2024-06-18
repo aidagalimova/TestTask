@@ -20,7 +20,6 @@ const styleNavTabs = (curRoute) => {
   for (const value of Object.values(routes)) {
     if (value.id !== curRoute.id) {
       const navEl = document.getElementById(`${value.id}`);
-      console.log(111, navEl);
       navEl.className = navEl.className.replaceAll(" active", "");
     }
   }
