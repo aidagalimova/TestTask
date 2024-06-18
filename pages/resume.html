@@ -1,0 +1,160 @@
+<div class="resume-page flex-row gap32" id="resume">
+  <!-- LEFT SIDE -->
+  <div class="flex-column gap32 left-side">
+    <!-- POST -->
+    <div class="about card flex-column gap16">
+      <img src="./assets/image/Abstract.png" alt="abstract" />
+      <div class="comment flex-row gap8">
+        <img src="./assets/icon/comment.svg" alt="comment" />
+        <span><span class="nameLink">Аида Галимова</span> добавила:</span>
+      </div>
+      <div class="about-me">
+        Изучение веб-разработки начала в 2019 году. Прошла курсы по JS, HTML,
+        CSS в КФУ. В 2020 начала изучение React так же с курсов КФУ. В
+        дальнейшем в проектах использовала JS/TS, React. В 2023 сдала дипломную
+        работу. Работала в казанской компании с мая 2022 года по апрель 2023,
+        где занималась разработкой сайта для студентов и преподователей РУДН.
+      </div>
+      <div class="flex-row gap32">
+        <div class="view-info flex-row gap8">
+          <img src="./assets/icon/eye.svg" />
+          <span>432</span>
+        </div>
+        <div class="view-info flex-row gap8">
+          <img src="./assets/icon/comment.svg" />
+          <span>47</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="secondary-info card flex-column gap16">
+      <div
+        class="secondary-title flex-row"
+        onclick="toggle('education-drop-down', 'education-drop-up', 'education-description')"
+      >
+        <span>Образование</span>
+        <img src="./assets/icon/chevron-down.svg" id="education-drop-down" />
+        <img
+          src="./assets/icon/chevron-up.svg"
+          id="education-drop-up"
+          class="drop-up"
+        />
+      </div>
+      <div id="education-description" class="secondary-description gap8">
+        <div>КФУ, 2023г.</div>
+        <div>
+          Институт информационных технологий и интеллектуальных​ систем (ИТИС),
+          Программная инженерия
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="secondary-info card flex-column gap16">
+      <div
+        class="secondary-title flex-row"
+        onclick="toggle('experience-drop-down', 'experience-drop-up', 'experience-description')"
+      >
+        <span>Опыт работы</span>
+        <img src="./assets/icon/chevron-down.svg" id="experience-drop-down" />
+        <img
+          src="./assets/icon/chevron-up.svg"
+          id="experience-drop-up"
+          class="drop-up"
+        />
+      </div>
+      <div id="experience-description" class="secondary-description gap8">
+        <div>DECK, Май 2022 — Апрель 2023</div>
+        <div>Frontend-разработчик</div>
+        <div>
+          Разработка внутренних веб-приложений для РУДН (админ-панель, сайт для
+          преподавателей и студентов) — Адаптивная и кроссбраузерная вёрстка
+          страниц по макетам Figma — Реализация логики страниц — Связь с
+          серверной частью веб-приложений — Работа с чужим кодом — Исправление
+          ошибок
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="flex-column gap32">
+    <!-- PERSON INFO -->
+    <div class="person-card card flex-column gap16">
+      <img src="./assets/image/Avatar.png" alt="avatar" class="avatar" />
+      <div class="user-info flex-column gap8">
+        <span class="name">Галимова Аида</span>
+        <span class="post">Frontend-разработчик</span>
+      </div>
+      <div class="flex-row gap8">
+        <a href="https://t.me/i1obi1" class="contact">
+          <img src="./assets/icon/telegram.svg" alt="telegram" />
+        </a>
+        <a
+          href="https://kazan.hh.ru/resume/98801908ff094f70820039ed1f7843434a676e"
+          class="contact"
+        >
+          <img src="./assets/icon/hh.svg" alt="hh" />
+        </a>
+        <a href="https://twitter.com" class="contact">
+          <img src="./assets/icon/twitter.svg" alt="twitter" />
+        </a>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav card">
+      <div class="nav-title nav-el flex-row" onclick="toggleNav()">
+        <span class="nav-title-text"> Навигация </span>
+        <img
+          src="./assets/icon/chevron-down.svg"
+          class="nav-drop-down"
+          id="nav-drop-down"
+        />
+        <img
+          src="./assets/icon/chevron-up.svg"
+          class="nav-drop-up"
+          id="nav-drop-up"
+        />
+      </div>
+      <div id="nav-els" class="nav-els">
+        <div class="nav-el flex-row">
+          <div class="nav-text flex-row gap16">
+            <img src="./assets/icon/person.svg" /><span>Мой профиль</span>
+          </div>
+        </div>
+        <div class="nav-el flex-row">
+          <div class="nav-text flex-row gap16">
+            <img src="./assets/icon/finance.svg" /><span>Баланс</span>
+          </div>
+          <span class="balance-value">$ 1,430</span>
+        </div>
+        <div class="nav-el flex-row">
+          <div class="nav-text flex-row gap16">
+            <img src="./assets/icon/scheme.svg" /><span>Связи</span>
+          </div>
+          <div class="red notification">29</div>
+        </div>
+        <div class="nav-el flex-row frends">
+          <div class="nav-text flex-row gap16">
+            <img src="./assets/icon/people.svg" /><span>Друзья</span>
+          </div>
+        </div>
+        <div class="nav-el flex-row events">
+          <div class="nav-text flex-row gap16">
+            <img src="./assets/icon/calendar.svg" /><span>События</span>
+          </div>
+          <div class="green notification">45</div>
+        </div>
+        <div class="nav-el flex-row">
+          <div class="nav-text flex-row gap16">
+            <img src="./assets/icon/settings.svg" /><span
+              >Настройки аккаунта</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
