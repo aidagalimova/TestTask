@@ -44,5 +44,5 @@ locationHandler();
 styleNavTabs(
   routes[window.location.hash.replace("#", "")]
     ? routes[window.location.hash.replace("#", "")]
-    : "#"
+    : routes["#"]
 );
