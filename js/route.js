@@ -41,4 +41,8 @@ const locationHandler = async () => {
 window.addEventListener("hashchange", locationHandler);
 locationHandler();
 
-styleNavTabs(routes[window.location.hash.replace("#", "")]);
+styleNavTabs(
+  routes[window.location.hash.replace("#", "")]
+    ? routes[window.location.hash.replace("#", "")]
+    : "#"
+);
