@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>A JavaScript project</title>
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div id="app">
+      <nav class="tab flex-row">
+        <a href="#" class="tab-link" id="resume-nav">
+          <img src="./assets/icon/menu.svg" alt="navBarResume" />
+          Резюме
+        </a>
+        <a href="#map" class="tab-link" id="map-nav">
+          <img src="./assets/icon/location.svg" alt="navBarLocation" />
+          Карта
+        </a>
+        <a href="#time" class="tab-link" id="time-nav">
+          <img src="./assets/icon/time.svg" alt="navBarTime" />
+          Время
+        </a>
+      </nav>
+
+      <div class="page" id="page"></div>
+    </div>
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/route.js" defer></script>
+  </body>
+</html>

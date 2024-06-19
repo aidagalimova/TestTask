@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("./styles/navBar.css");
+@import url("./styles/resume.css");
+
+html,
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16.41px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #505050;
+}
+
+.page {
+  background: rgba(241, 241, 241, 1);
+  padding: 72px 32px 40px 32px;
+  min-height: 100vh;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap8 {
+  gap: 8px;
+}
+
+.gap16 {
+  gap: 16px;
+}
+
+.gap32 {
+  gap: 32px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0px 0px 2px 0px #0000001a;
+}
