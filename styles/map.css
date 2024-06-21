@@ -2,12 +2,13 @@
   padding: 18px 32px 32px 32px;
   background-color: white;
   max-width: 1312px;
-  min-height: calc(100vh - 112px);
+  height: 568px;
 }
 
 .map-container {
   max-width: 1312px;
   height: 480px;
+  display: none;
 }
 
 .map-title {
@@ -17,7 +18,10 @@
   text-align: left;
   color: #505050;
 }
-
+.loader-container {
+  align-content: center;
+  text-align: -webkit-center;
+}
 .loader {
   width: 200px;
   aspect-ratio: 1;

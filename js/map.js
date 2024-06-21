@@ -1,5 +1,3 @@
-ymaps.ready(init);
-
 function init() {
   try {
     const myMap = new ymaps.Map(
@@ -37,5 +35,7 @@ function init() {
 
 function hideLoader() {
   const loader = document.getElementById("loader");
+  const map = document.getElementById("map");
+  map.style.display = "flex";
   loader.style.display = "none";
 }

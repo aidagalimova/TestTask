@@ -1,5 +1,6 @@
 .navbar {
   position: fixed;
+  z-index: 1;
   justify-content: flex-start;
   height: 40px;
   width: 100%;
