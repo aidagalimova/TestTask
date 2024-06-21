@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("./styles/navBar.css");
 @import url("./styles/resume.css");
-
+@import url("./styles/map.css");
 html,
 * {
   font-family: "Roboto", sans-serif;
@@ -23,29 +23,77 @@ body {
   min-height: 100vh;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
+.px-32 {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.gap8 {
+.px-66 {
+  padding-left: 66px;
+  padding-right: 66px;
+}
+
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.pt-56 {
+  padding-top: 56px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pl-8 {
+  padding-left: 8px;
+}
+
+.pl-16 {
+  padding-left: 16px;
+}
+
+.gap-8 {
   gap: 8px;
 }
 
-.gap16 {
+.gap-16 {
   gap: 16px;
 }
 
-.gap32 {
-  gap: 32px;
+.card {
+  box-shadow: 0px 0px 2px 0px #0000001a;
+  max-width: 1080px;
 }
 
-.card {
-  background-color: white;
-  box-shadow: 0px 0px 2px 0px #0000001a;
+.border-left {
+  border-left: 2px solid #d3d8de;
+}
+
+.pointer {
+  cursor: pointer;
 }

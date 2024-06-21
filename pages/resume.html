@@ -1,39 +1,44 @@
-<div class="resume-page flex-row gap32" id="resume">
-  <!-- LEFT SIDE -->
-  <div class="flex-column gap32 left-side">
-    <!-- POST -->
-    <div class="about card flex-column gap16">
-      <img src="./assets/image/Abstract.png" alt="abstract" />
-      <div class="comment flex-row gap8">
-        <img src="./assets/icon/comment.svg" alt="comment" />
-        <span><span class="name-link">Аида Галимова</span> добавила:</span>
-      </div>
-      <div class="about-me">
-        Изучение веб-разработки начала в 2019 году. Прошла курсы по JS, HTML,
-        CSS в КФУ. В 2020 начала изучение React так же с курсов КФУ. В
-        дальнейшем в проектах использовала JS/TS, React. В 2023 сдала дипломную
-        работу. Работала в казанской компании с мая 2022 года по апрель 2023,
-        где занималась разработкой сайта для студентов и преподователей РУДН.
-      </div>
-      <div class="flex-row gap32">
-        <div class="view-info flex-row gap8">
-          <img src="./assets/icon/eye.svg" alt="eye" />
-          <span>432</span>
-        </div>
-        <div class="view-info flex-row gap8">
+<div class="d-flex flex-row" id="resume">
+  <div class="d-flex flex-column">
+    <div class="card px-32 pt-56 rounded-0 border-0">
+      <img
+        class="card-img-top"
+        src="./assets/image/Abstract.png"
+        alt="abstract"
+      />
+      <div class="card-body px-0 pt-16 d-flex flex-column gap-16">
+        <div class="d-flex gap-8 align-items-center">
           <img src="./assets/icon/comment.svg" alt="comment" />
-          <span>47</span>
+          <span><span>Аида Галимова</span> добавила:</span>
+        </div>
+        <div class="border-left-3 pl-8">
+          Изучение веб-разработки начала в 2019 году. Прошла курсы по JS, HTML,
+          CSS в КФУ. В 2020 начала изучение React так же с курсов КФУ. В
+          дальнейшем в проектах использовала JS/TS, React. В 2023 сдала
+          дипломную работу. Работала в казанской компании с мая 2022 года по
+          апрель 2023, где занималась разработкой сайта для студентов и
+          преподователей РУДН.
+        </div>
+        <div class="d-flex flex-row">
+          <div>
+            <img src="./assets/icon/eye.svg" alt="eye" />
+            <span>432</span>
+          </div>
+          <div>
+            <img src="./assets/icon/comment.svg" alt="comment" />
+            <span>47</span>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- EDUCATION -->
-    <div class="secondary-info card flex-column gap16">
+    <div class="card px-32 py-16 rounded-0 border-0">
       <div
-        class="secondary-title flex-row"
+        class="d-flex flex-row justify-content-between pointer"
         onclick="toggle('education-drop-down', 'education-drop-up', 'education-description')"
       >
-        <span>Образование</span>
+        <div>
+          <span>Образование</span>
+        </div>
         <img
           src="./assets/icon/chevron-down.svg"
           id="education-drop-down"
@@ -42,11 +47,11 @@
         <img
           src="./assets/icon/chevron-up.svg"
           id="education-drop-up"
-          class="drop-up"
           alt="dropUp"
+          class="drop-up"
         />
       </div>
-      <div id="education-description" class="secondary-description gap8">
+      <div id="education-description" class="secondary-description">
         <div>КФУ, 2023г.</div>
         <div>
           Институт информационных технологий и интеллектуальных​ систем (ИТИС),
@@ -54,14 +59,14 @@
         </div>
       </div>
     </div>
-
-    <!-- EXPERIENCE -->
-    <div class="secondary-info card flex-column gap16">
+    <div class="card px-32 py-16 rounded-0 border-0">
       <div
-        class="secondary-title flex-row"
+        class="d-flex flex-row justify-content-between pointer"
         onclick="toggle('experience-drop-down', 'experience-drop-up', 'experience-description')"
       >
-        <span>Опыт работы</span>
+        <div>
+          <span>Опыт работы</span>
+        </div>
         <img
           src="./assets/icon/chevron-down.svg"
           id="experience-drop-down"
@@ -70,11 +75,11 @@
         <img
           src="./assets/icon/chevron-up.svg"
           id="experience-drop-up"
-          class="drop-up"
           alt="dropUp"
+          class="drop-up"
         />
       </div>
-      <div id="experience-description" class="secondary-description gap8">
+      <div id="experience-description" class="secondary-description">
         <div>DECK, Май 2022 — Апрель 2023</div>
         <div>Frontend-разработчик</div>
         <div>
@@ -87,35 +92,37 @@
       </div>
     </div>
   </div>
-
-  <!-- RIGHT SIDE -->
-  <div class="flex-column gap32">
-    <!-- PERSON INFO -->
-    <div class="person-card card flex-column gap16">
-      <img src="./assets/image/Avatar.png" alt="avatar" class="avatar" />
-      <div class="user-info flex-column gap8">
+  <div class="d-flex flex-column">
+    <div
+      class="card py-32 rounded-0 border-0 d-flex flex-column align-items-center"
+    >
+      <div class="px-66">
+        <img src="./assets/image/Avatar.png" alt="avatar" />
+      </div>
+      <div class="d-flex flex-column gap-8 align-items-center">
         <span class="name">Галимова Аида</span>
         <span class="post">Frontend-разработчик</span>
       </div>
-      <div class="flex-row gap8">
-        <a href="https://t.me/i1obi1" class="contact">
+      <div class="d-flex flex-row gap-8 align-items-center">
+        <a class="pointer" href="https://t.me/i1obi1">
           <img src="./assets/icon/telegram.svg" alt="telegram" />
         </a>
         <a
+          class="pointer"
           href="https://kazan.hh.ru/resume/98801908ff094f70820039ed1f7843434a676e"
-          class="contact"
         >
           <img src="./assets/icon/hh.svg" alt="hh" />
         </a>
-        <a href="https://twitter.com" class="contact">
+        <a class="pointer" href="https://twitter.com">
           <img src="./assets/icon/twitter.svg" alt="twitter" />
         </a>
       </div>
     </div>
-
-    <!-- NAVIGATION -->
-    <div class="nav card">
-      <div class="nav-title nav-el flex-row" onclick="toggleNav()">
+    <div class="card rounded-0 border-0">
+      <div
+        class="d-flex flex-row justify-content-between border-bottom py-8 px-16 pointer"
+        onclick="toggleNav()"
+      >
         <span class="nav-title-text"> Навигация </span>
         <img
           src="./assets/icon/chevron-down.svg"
@@ -130,47 +137,57 @@
           alt="dropUp"
         />
       </div>
-      <div id="nav-els" class="nav-els">
-        <div class="nav-el flex-row">
-          <div class="nav-text flex-row gap16">
-            <img src="./assets/icon/person.svg" alt="profileIcon" /><span
-              >Мой профиль</span
-            >
-          </div>
+      <div id="nav-els" class="py-8">
+        <div
+          class="d-flex flex-row gap-16 pl-16 align-items-center mb-16 pointer"
+        >
+          <img src="./assets/icon/person.svg" alt="profileIcon" /><span
+            >Мой профиль</span
+          >
         </div>
-        <div class="nav-el flex-row">
-          <div class="nav-text flex-row gap16">
+        <div
+          class="d-flex flex-row justify-content-between px-16 mb-16 pointer"
+        >
+          <div class="d-flex flex-row gap-16 align-items-center">
             <img src="./assets/icon/finance.svg" alt="financeIcon" /><span
               >Баланс</span
             >
           </div>
           <span class="balance-value">$ 1,430</span>
         </div>
-        <div class="nav-el flex-row">
-          <div class="nav-text flex-row gap16">
+        <div
+          class="d-flex flex-row justify-content-between px-16 mb-16 pointer"
+        >
+          <div class="d-flex flex-row gap-16 align-items-center">
             <img src="./assets/icon/scheme.svg" alt="schemeIcon" /><span
               >Связи</span
             >
           </div>
           <div class="red notification">29</div>
         </div>
-        <div class="nav-el flex-row frends">
-          <div class="nav-text flex-row gap16">
+        <div
+          class="d-flex flex-row justify-content-between px-16 pb-16 pointer border-bottom"
+        >
+          <div class="d-flex flex-row gap-16 align-items-center">
             <img src="./assets/icon/people.svg" alt="peopleIcon" /><span
               >Друзья</span
             >
           </div>
         </div>
-        <div class="nav-el flex-row events">
-          <div class="nav-text flex-row gap16">
+        <div
+          class="d-flex flex-row justify-content-between px-16 pt-16 mb-16 pointer"
+        >
+          <div class="d-flex flex-row gap-16 align-items-center">
             <img src="./assets/icon/calendar.svg" alt="calendarIcon" /><span
               >События</span
             >
           </div>
           <div class="green notification">45</div>
         </div>
-        <div class="nav-el flex-row">
-          <div class="nav-text flex-row gap16">
+        <div
+          class="d-flex flex-row justify-content-between px-16 mb-16 pointer"
+        >
+          <div class="d-flex flex-row gap-16 align-items-center">
             <img src="./assets/icon/settings.svg" alt="settingsIcon" /><span
               >Настройки аккаунта</span
             >
