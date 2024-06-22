@@ -1,5 +1,6 @@
 function init() {
   try {
+    const COORDINATES = [55.834683, 49.124026];
     const myMap = new ymaps.Map(
       "map",
       {
@@ -14,7 +15,7 @@ function init() {
       {
         geometry: {
           type: "Point",
-          coordinates: [55.834683, 49.124026],
+          coordinates: COORDINATES,
         },
         properties: {
           iconContent: "Home",
@@ -36,6 +37,10 @@ function init() {
 function hideLoader() {
   const loader = document.getElementById("loader");
   const map = document.getElementById("map");
-  map.style.display = "flex";
-  loader.style.display = "none";
+  if (loader && map) {
+    map.style.display = "flex";
+    loader.style.display = "none";
+  } else {
+    console.warn("Loader or map element not found.");
+  }
 }

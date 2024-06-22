@@ -44,9 +44,9 @@
       )
       bottom / 100% 50% content-box content-box;
   background-repeat: no-repeat;
-  animation: l11 1s infinite linear;
+  animation: rotate-loader 1s infinite linear;
 }
-@keyframes l11 {
+@keyframes rotate-loader {
   100% {
     transform: rotate(1turn);
   }
