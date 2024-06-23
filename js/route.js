@@ -42,6 +42,11 @@ const locationHandler = async () => {
     if (route.id === "map-nav") {
       ymaps.ready(init);
     }
+    if (route.id === "time-nav") {
+      displayTime();
+    } else {
+      clearDisplayInterval();
+    }
   } catch (error) {
     console.log("Error loading page", error);
   }
