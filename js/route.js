@@ -44,8 +44,6 @@ const locationHandler = async () => {
     }
     if (route.id === "time-nav") {
       displayTime();
-    } else {
-      clearDisplayInterval();
     }
   } catch (error) {
     console.log("Error loading page", error);
