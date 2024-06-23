@@ -3,28 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <title>A JavaScript project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9bf21095-2d5c-4ca7-8a13-8cc53ea9ba84"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <div id="app">
-      <nav class="tab flex-row">
-        <a href="#" class="tab-link" id="resume-nav">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top"
+      >
+        <a href="#" class="nav-item nav-link" id="resume-nav">
           <img src="./assets/icon/menu.svg" alt="navBarResume" />
           Резюме
         </a>
-        <a href="#map" class="tab-link" id="map-nav">
+        <a href="#map" class="nav-item nav-link" id="map-nav">
           <img src="./assets/icon/location.svg" alt="navBarLocation" />
           Карта
         </a>
-        <a href="#time" class="tab-link" id="time-nav">
+        <a href="#time" class="nav-item nav-link" id="time-nav">
           <img src="./assets/icon/time.svg" alt="navBarTime" />
           Время
         </a>
       </nav>
-
       <div class="page" id="page"></div>
     </div>
+    <script src="./js/map.js" defer></script>
     <script src="./js/scripts.js" defer></script>
     <script src="./js/route.js" defer></script>
   </body>

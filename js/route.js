@@ -39,6 +39,9 @@ const locationHandler = async () => {
     );
     document.getElementById("page").innerHTML = html;
     document.title = route.title;
+    if (route.id === "map-nav") {
+      ymaps.ready(init);
+    }
   } catch (error) {
     console.log("Error loading page", error);
   }

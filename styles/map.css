@@ -1,0 +1,53 @@
+.map-page {
+  padding: 18px 32px 32px 32px;
+  background-color: white;
+  max-width: 1312px;
+  height: 568px;
+}
+
+.map-container {
+  max-width: 1312px;
+  height: 480px;
+  display: none;
+}
+
+.map-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+  color: #505050;
+}
+.loader-container {
+  align-content: center;
+  text-align: -webkit-center;
+}
+.loader {
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 6px;
+  background: conic-gradient(from 135deg at top, currentColor 90deg, #0000 0) 0
+      calc(50% - 4px) / 17px 8.5px,
+    radial-gradient(
+        farthest-side at bottom left,
+        #0000 calc(100% - 6px),
+        currentColor calc(100% - 5px) 99%,
+        #0000
+      )
+      top right/50% 50% content-box content-box,
+    radial-gradient(
+        farthest-side at top,
+        #0000 calc(100% - 6px),
+        currentColor calc(100% - 5px) 99%,
+        #0000
+      )
+      bottom / 100% 50% content-box content-box;
+  background-repeat: no-repeat;
+  animation: rotate-loader 1s infinite linear;
+}
+@keyframes rotate-loader {
+  100% {
+    transform: rotate(1turn);
+  }
+}
