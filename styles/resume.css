@@ -1,3 +1,9 @@
+.resume-container {
+  @media (max-width: 700px) {
+    flex-direction: column-reverse !important;
+  }
+}
+
 .secondary-title span {
   font-size: 16px;
   line-height: 18.75px;
@@ -55,4 +61,10 @@
 
 .d-flex {
   gap: 32px;
+  @media (max-width: 700px) {
+    gap: 16px;
+  }
+  @media (max-width: 400px) {
+    gap: 8px;
+  }
 }

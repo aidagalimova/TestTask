@@ -1,27 +1,14 @@
-.map-page {
-  padding: 18px 32px 32px 32px;
-  background-color: white;
-  max-width: 1312px;
-  height: 568px;
-}
-
 .map-container {
   max-width: 1312px;
   height: 480px;
   display: none;
 }
 
-.map-title {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18.75px;
-  text-align: left;
-  color: #505050;
-}
 .loader-container {
   align-content: center;
   text-align: -webkit-center;
 }
+
 .loader {
   width: 200px;
   aspect-ratio: 1;
